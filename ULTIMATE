@@ -3,9 +3,10 @@ ULTIMATE
 
 Rules
 -----
-+ Each player rolls a 20 sided and the sum is the point goal for the game
-+ Each player rolls a 12 sided and the play order goes from highest to lowest---tying players must both re-roll
++ Each player rolls a 20 sided die and the sum is the point goal for the game
++ Each player rolls a 12 sided die and the play order goes from highest to lowest---tying players must both re-roll
 + Play a game on your turn and use a die to decide which one
+    - with 5 games, roll a 10 sided (R) and choice = abs( 5 - R) with choice 0 being wild
 
 
 
@@ -14,21 +15,21 @@ Games
 
 + Jenga
     - roll MegaDie R = abs( outer - inner )
-    - make R valid moves
+    - make R valid moves and win points = R
     - if it falls, lose points = 7 - R
 + Scrabble
     - roll 8 sided (R) and pick that number of tiles
     - make a valid play and win points = 9 - R
     - fail to play and lose points = R
 + Smart Ass
-    - roll 8 sided (Ra) and have turns = Ra / 2
+    - roll 8 sided (Ra) and have turns = unceil( 2Ra )
     - per turn roll 12 sided (Rb) and card type = Rb / 3
     - Who, What, (when), Where, (why), (how), Hard correspond to Rb = 1,2,(),3,(),(),4
     - win points = (1 * Wcards) + (2 * Hcards)
 + Battle of the Sexes
     - get 4 turns
-    - roll 8 sided = 2Ra and choose color P,O,Y,G == 1,2,3,4 
-    - roll 20 sided = 2Rb and choose sex M,F == 1,2
+    - roll 8 sided = unceil( 2Ra ) and choose color P,O,Y,G == 1,2,3,4 
+    - roll 20 sided = 2Rb and choose sex M,F == 1:10, 11:20
     - win points = #correct-answer ONLY if #correct-answer > 2
 + Cards
     - pull a card from the deck with value A=1,#=#,J=11,Q=12,K=13
