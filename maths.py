@@ -21,9 +21,9 @@ for roll in outer:
             e = e + 1
         elif abs( roll - rol) == 5:
             f = f + 1
-print a
-print b
-print c
-print d
-print e
-print f
+print "Frequency of rolling a 0: %s" % a
+print "Frequency of rolling a 1: %s" % e
+print "Frequency of rolling a 2: %s" % c
+print "Frequency of rolling a 3: %s" % d
+print "Frequency of rolling a 4: %s" % e
+print "Frequency of rolling a 5: %s" % f
